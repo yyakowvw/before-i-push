@@ -72,7 +72,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: yyakowvw/before-i-push@v0
+      - uses: yyakowvw/before-i-push@v0.1.0
 ```
 
 The report appears in the job summary and as one comment on the pull request, updated on every push.

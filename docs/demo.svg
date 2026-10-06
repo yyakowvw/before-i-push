@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="901" height="556" viewBox="0 0 901 556" role="img" aria-label="before-i-push terminal report">
+<rect width="901" height="556" rx="10" fill="#1e2029"/>
+<circle cx="22" cy="18" r="6" fill="#ff5f57"/><circle cx="42" cy="18" r="6" fill="#febc2e"/><circle cx="62" cy="18" r="6" fill="#28c840"/>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#e6e6e6">
+<text x="20" y="52" xml:space="preserve"><tspan >$ npx before-i-push</tspan></text>
+<text x="20" y="72" xml:space="preserve"></text>
+<text x="20" y="92" xml:space="preserve"><tspan >  </tspan><tspan font-weight="700">before-i-push</tspan><tspan > </tspan><tspan fill="#7b8496">· 5 files · 0.2s</tspan></text>
+<text x="20" y="112" xml:space="preserve"></text>
+<text x="20" y="132" xml:space="preserve"><tspan >  </tspan><tspan fill="#ff6b6b">✖</tspan><tspan > </tspan><tspan font-weight="700">Leaked keys</tspan></text>
+<text x="20" y="152" xml:space="preserve"><tspan >      ⛔ </tspan><tspan fill="#ff6b6b">Stripe live secret key in the code</tspan><tspan fill="#7b8496">  src/lib/stripe.ts:1</tspan></text>
+<text x="20" y="172" xml:space="preserve"><tspan fill="#7b8496">         sk_liv…b4Cd</tspan></text>
+<text x="20" y="192" xml:space="preserve"><tspan >         </tspan><tspan opacity="0.6">→</tspan><tspan > Use an environment variable instead, and revoke this key — once pushed, it is public.</tspan></text>
+<text x="20" y="212" xml:space="preserve"><tspan >  </tspan><tspan fill="#ff6b6b">✖</tspan><tspan > </tspan><tspan font-weight="700">Secret files</tspan></text>
+<text x="20" y="232" xml:space="preserve"><tspan >      ⛔ </tspan><tspan fill="#ff6b6b">.env is committed to git</tspan><tspan fill="#7b8496">  .env</tspan></text>
+<text x="20" y="252" xml:space="preserve"><tspan >         </tspan><tspan opacity="0.6">→</tspan><tspan > git rm --cached ".env", add it to .gitignore, rotate the values inside (they stay in history).</tspan></text>
+<text x="20" y="272" xml:space="preserve"><tspan >  </tspan><tspan fill="#5af78e">✔</tspan><tspan > </tspan><tspan font-weight="700">Git</tspan><tspan fill="#7b8496">  ok</tspan></text>
+<text x="20" y="292" xml:space="preserve"><tspan >  </tspan><tspan fill="#f3f99d">✖</tspan><tspan > </tspan><tspan font-weight="700">Dependencies</tspan></text>
+<text x="20" y="312" xml:space="preserve"><tspan >      ⚠️  </tspan><tspan fill="#f3f99d">No lockfile</tspan></text>
+<text x="20" y="332" xml:space="preserve"><tspan fill="#7b8496">         Every install can pick different versions than the ones you tested.</tspan></text>
+<text x="20" y="352" xml:space="preserve"><tspan >         </tspan><tspan opacity="0.6">→</tspan><tspan > Run your package manager once (npm install) and commit the lockfile.</tspan></text>
+<text x="20" y="372" xml:space="preserve"><tspan >  </tspan><tspan fill="#f3f99d">✖</tspan><tspan > </tspan><tspan font-weight="700">Leftovers</tspan></text>
+<text x="20" y="392" xml:space="preserve"><tspan >      ⚠️  </tspan><tspan fill="#f3f99d">debugger statement</tspan><tspan fill="#7b8496">  src/pages/checkout.tsx:2</tspan></text>
+<text x="20" y="412" xml:space="preserve"><tspan >         </tspan><tspan opacity="0.6">→</tspan><tspan > Remove it — it pauses the page for anyone with dev tools open.</tspan></text>
+<text x="20" y="432" xml:space="preserve"><tspan >  </tspan><tspan fill="#57c7ff">•</tspan><tspan > </tspan><tspan font-weight="700">Lint · Types · Tests · Build</tspan></text>
+<text x="20" y="452" xml:space="preserve"><tspan >      ℹ️  </tspan><tspan fill="#57c7ff">Not run: build</tspan></text>
+<text x="20" y="472" xml:space="preserve"><tspan >         </tspan><tspan opacity="0.6">→</tspan><tspan > Add --full to run them too.</tspan></text>
+<text x="20" y="492" xml:space="preserve"></text>
+<text x="20" y="512" xml:space="preserve"><tspan >  ⛔ </tspan><tspan font-weight="700">Do not push yet</tspan><tspan >   score </tspan><tspan fill="#ff6b6b" font-weight="700">40/100</tspan><tspan fill="#7b8496">   2 blocking · 2 warnings</tspan></text>
+<text x="20" y="532" xml:space="preserve"><tspan fill="#7b8496">  Want these fixed for you, and a safe deploy in one click? → https://beforeideploy.app</tspan></text>
+</g>
+</svg>

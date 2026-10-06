@@ -1,0 +1,43 @@
+{
+  "name": "before-i-push",
+  "version": "0.1.0",
+  "description": "Catch leaked keys, committed .env files, leftover debug code and broken builds before you push. Zero dependencies.",
+  "type": "module",
+  "bin": {
+    "before-i-push": "bin/before-i-push.mjs"
+  },
+  "exports": "./src/index.mjs",
+  "files": [
+    "bin",
+    "src",
+    "action.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node bin/before-i-push.mjs ."
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "secrets",
+    "secret-scanner",
+    "pre-push",
+    "git-hook",
+    "deploy",
+    "security",
+    "cli",
+    "github-action",
+    "zero-dependency"
+  ],
+  "license": "MIT",
+  "author": "Before I Deploy (https://beforeideploy.app)",
+  "homepage": "https://github.com/yyakowvw/before-i-push#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyakowvw/before-i-push.git"
+  },
+  "bugs": "https://github.com/yyakowvw/before-i-push/issues"
+}
